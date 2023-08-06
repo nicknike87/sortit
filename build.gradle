@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+jar {
+    archiveName = 'sortit.jar'
+    version =  '0.1.0'
+    manifest {
+        attributes(
+                'Main-Class': 'com.example.shift.Solution'
+        )
+    }
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+group 'com.example.shift'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.lexicalscope.jewelcli:jewelcli:0.8.9'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
