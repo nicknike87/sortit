@@ -5,9 +5,9 @@
 4. остальные параметры – имена входных файлов, не менее одного.
 
 Примеры запуска из командной строки для Windows:  
-java -jar sortit.exe -i -a out.txt in.txt (для целых чисел по возрастанию)    
-java -jar sortit.exe -s out.txt in1.txt in2.txt in3.txt (для строк по возрастанию)  
-java -jar sortit.exe -d -s out.txt in1.txt in2.txt (для строк по убыванию)  
+java -jar sortit.jar -i -a out.txt in.txt (для целых чисел по возрастанию)    
+java -jar sortit.jar -s out.txt in1.txt in2.txt in3.txt (для строк по возрастанию)  
+java -jar sortit.jar -d -s out.txt in1.txt in2.txt (для строк по убыванию)  
 
 Особенности реализации:  
 • среда разработки intellij idea  
