@@ -13,4 +13,4 @@ java -jar sortit.exe -d -s out.txt in1.txt in2.txt (для строк по уб�
 • среда разработки intellij idea  
 • версия JDK 1.8  
 • сборка gradle-6.8  
-• использовалась стороняя библиотека JewelCli('com.lexicalscope.jewelcli:jewelcli:0.8.9'  
+• использовалась стороняя библиотека JewelCli('com.lexicalscope.jewelcli:jewelcli:0.8.9')  
